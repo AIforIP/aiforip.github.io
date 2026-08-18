@@ -336,7 +336,8 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .people-page .lead-label{order:3;margin-top:80px}
 .people-page .lead-profile{order:4}
 .people-page .students-section{order:5}
-.people-page .join-card{order:6}
+.people-page .alumni-section{order:6}
+.people-page .join-card{order:7}
 .student-preview{display:grid;grid-template-columns:150px 1fr auto;align-items:center;gap:28px;margin-top:24px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .student-preview span,.alumni-line span{color:var(--blue);font-size:8px;font-weight:750;letter-spacing:.14em}
 .student-preview p{margin:0;color:var(--muted);font:12px/1.6 var(--serif)}
@@ -349,8 +350,15 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .student-grid p{margin:0;color:var(--muted);font-size:10px}
 .alumni-line{display:grid;grid-template-columns:100px 1fr;gap:25px;margin-top:28px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .alumni-line p{margin:0;color:var(--muted);font:12px/1.7 var(--serif)}
+.alumni-section{margin-top:75px}
+.alumni-grid{display:grid;grid-template-columns:repeat(2,1fr);column-gap:55px;border-top:1px solid var(--ink)}
+.alumni-grid article{min-height:110px;padding:24px 0;display:grid;grid-template-columns:60px 1fr;gap:12px;align-items:center;border-bottom:1px solid var(--line)}
+.alumni-grid article>span{align-self:start;padding-top:5px;color:#8a95a3;font-size:8px;font-weight:700;letter-spacing:.12em}
+.alumni-grid h3{margin:0 0 8px;font:500 21px var(--serif)}
+.alumni-grid p{margin:0;color:var(--muted);font:11px/1.6 var(--serif)}
 @media(max-width:760px){.student-preview{grid-template-columns:1fr}.alumni-line{grid-template-columns:1fr}}
 @media(max-width:480px){.student-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.alumni-grid{grid-template-columns:1fr}}
 .research-figure{margin-top:44px;margin-bottom:62px}
 .research-figure>a{display:block;padding:12px;background:#fff;border:1px solid #d5dbd8;box-shadow:0 12px 35px rgba(10,24,48,.06);transition:border-color .2s,box-shadow .2s}
 .research-figure>a:hover{border-color:#9baac0;box-shadow:0 16px 42px rgba(10,24,48,.1)}
@@ -358,13 +366,11 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .research-figure figcaption{max-width:760px;margin:14px auto 0;color:var(--muted);font:11px/1.6 var(--sans)}
 .research-figure figcaption b{color:var(--ink)}
 .research-figure figcaption span{float:right;color:#8792a1;font-size:9px;letter-spacing:.03em}
-.figure-ipbench,.figure-patre,.figure-autopatent,.figure-flowpie,.figure-task{margin-left:50%;transform:translateX(-50%)}
-.figure-ipbench{width:min(1040px,calc(100vw - 56px))}
-.figure-patre{width:min(1080px,calc(100vw - 56px))}
-.figure-autopatent{width:min(1120px,calc(100vw - 56px));margin-top:48px}
-.figure-flowpie{width:min(1160px,calc(100vw - 40px));margin-top:40px}
-.figure-task{width:min(880px,calc(100vw - 80px));margin-top:36px;margin-bottom:50px}
-@media(max-width:800px){.research-figure>a{padding:8px}.figure-ipbench,.figure-patre,.figure-autopatent,.figure-flowpie,.figure-task{width:calc(100vw - 32px)}.research-figure figcaption{padding:0 4px}}
+.figure-ipbench,.figure-patre,.figure-autopatent,.figure-flowpie,.figure-task{width:100%;margin-left:0;transform:none}
+.figure-autopatent{margin-top:48px}
+.figure-flowpie{margin-top:40px}
+.figure-task{margin-top:36px;margin-bottom:50px}
+@media(max-width:800px){.research-figure figcaption{padding:0 4px}}
 @media(max-width:620px){.research-figure{margin-top:32px;margin-bottom:44px}.research-figure figcaption{font-size:10px}.research-figure figcaption span{display:none}}
 
 /* Editorial rhythm: use rules and typography instead of repeated cards */
