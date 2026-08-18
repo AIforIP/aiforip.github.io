@@ -275,8 +275,14 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .institution-strip{position:absolute;z-index:2;left:50%;bottom:0;height:70px;display:flex;align-items:center;gap:18px;transform:translateX(-50%);border-top:1px solid #bfc7c5;color:#364257;font:600 12px var(--serif);letter-spacing:.06em}
 .institution-strip i{color:#8a94a2;font-style:normal}
 .institution-strip p{margin-left:auto;color:#7a8491;font:700 7px var(--sans);letter-spacing:.16em}
-@media(max-width:900px){.editorial-hero .hero-layout{grid-template-columns:1fr}.hero-abstract{display:none}}
-@media(max-width:620px){.editorial-hero h1{font-size:52px}.editorial-hero .hero-layout{padding-top:135px}.institution-strip{height:58px}}
+.hero-index{grid-column:1/-1;display:grid;grid-template-columns:1.25fr 1fr 1fr;margin-top:-30px;border-top:1px solid #bfc7c5;border-bottom:1px solid #bfc7c5}
+.hero-index>div{min-height:100px;padding:20px 28px 20px 0}
+.hero-index>div+div{padding-left:28px;border-left:1px solid #cbd1cf}
+.hero-index span{color:#65748b;font-size:7px;font-weight:750;letter-spacing:.15em}
+.hero-index p{margin:14px 0 0;color:#344157;font:13px/1.55 var(--serif)}
+.hero-index a{border-bottom:1px solid #b7c0c5}
+@media(max-width:900px){.editorial-hero .hero-layout{grid-template-columns:1fr}.hero-abstract{display:none}.hero-index{margin-top:0}}
+@media(max-width:620px){.editorial-hero h1{font-size:52px}.editorial-hero .hero-layout{padding-top:135px}.institution-strip{height:58px}.hero-index{grid-template-columns:1fr}.hero-index>div{min-height:auto;padding:18px 0}.hero-index>div+div{padding-left:0;border-top:1px solid #cbd1cf;border-left:0}}
 .blog-feature{display:grid;grid-template-columns:240px 1fr;gap:55px;padding:45px 0 65px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
 .blog-feature>div:first-child{display:flex;flex-direction:column;justify-content:space-between;color:var(--blue);font-size:8px;font-weight:750;letter-spacing:.13em}
 .blog-feature time{color:var(--muted)}
@@ -323,6 +329,7 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 @media(max-width:620px){.blog-coming{align-items:flex-start;flex-direction:column;gap:12px}.article-hero{padding-top:130px}.article-back{margin-bottom:35px}.article-hero h1{font-size:44px}.article-meta{align-items:flex-start;flex-direction:column;gap:8px}.article-layout{padding-top:60px}.article-body{font-size:16px}.article-body .article-lede{font-size:21px}.article-body h2{font-size:29px}.single-post .original-link{margin-left:12px}}
 .people-grid .portrait{height:180px}
 .faculty .portrait{height:160px}
+.faculty .portrait-photo img,.person:not(.person-lead) .portrait-photo img{object-fit:contain;object-position:center;filter:none}
 .people-page .container{display:flex;flex-direction:column}
 .people-page .faculty-label{order:1;margin-top:0}
 .people-page .faculty-grid{order:2}
@@ -344,3 +351,9 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .alumni-line p{margin:0;color:var(--muted);font:12px/1.7 var(--serif)}
 @media(max-width:760px){.student-preview{grid-template-columns:1fr}.student-grid{grid-template-columns:repeat(2,1fr)}.alumni-line{grid-template-columns:1fr}}
 @media(max-width:480px){.student-grid{grid-template-columns:1fr}}
+.research-figure{margin:42px 0 55px}
+.research-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#fff}
+.research-figure figcaption{margin-top:12px;color:var(--muted);font:11px/1.55 var(--sans)}
+.research-figure figcaption b{color:var(--ink)}
+.figure-wide{width:min(1100px,calc(100vw - 48px));margin-left:50%;transform:translateX(-50%)}
+@media(max-width:620px){.figure-wide{width:100%;margin-left:0;transform:none}.research-figure{margin:34px 0 42px}.research-figure figcaption{font-size:10px}}
