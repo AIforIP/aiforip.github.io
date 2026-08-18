@@ -321,3 +321,26 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .article-note a{font:700 9px var(--sans)}
 @media(max-width:800px){.article-layout{grid-template-columns:1fr;gap:0}.article-toc{display:none}}
 @media(max-width:620px){.blog-coming{align-items:flex-start;flex-direction:column;gap:12px}.article-hero{padding-top:130px}.article-back{margin-bottom:35px}.article-hero h1{font-size:44px}.article-meta{align-items:flex-start;flex-direction:column;gap:8px}.article-layout{padding-top:60px}.article-body{font-size:16px}.article-body .article-lede{font-size:21px}.article-body h2{font-size:29px}.single-post .original-link{margin-left:12px}}
+.people-grid .portrait{height:180px}
+.faculty .portrait{height:160px}
+.people-page .container{display:flex;flex-direction:column}
+.people-page .faculty-label{order:1;margin-top:0}
+.people-page .faculty-grid{order:2}
+.people-page .lead-label{order:3;margin-top:80px}
+.people-page .lead-profile{order:4}
+.people-page .students-section{order:5}
+.people-page .join-card{order:6}
+.student-preview{display:grid;grid-template-columns:150px 1fr auto;align-items:center;gap:28px;margin-top:24px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.student-preview span,.alumni-line span{color:var(--blue);font-size:8px;font-weight:750;letter-spacing:.14em}
+.student-preview p{margin:0;color:var(--muted);font:12px/1.6 var(--serif)}
+.student-preview a{font-size:10px;font-weight:700}
+.students-section{margin-top:85px}
+.student-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.student-grid article{min-height:150px;padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.student-grid b{color:#8ca0bd;font:500 22px var(--serif)}
+.student-grid h3{margin:30px 0 7px;font:500 20px var(--serif)}
+.student-grid p{margin:0;color:var(--muted);font-size:10px}
+.alumni-line{display:grid;grid-template-columns:100px 1fr;gap:25px;margin-top:28px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.alumni-line p{margin:0;color:var(--muted);font:12px/1.7 var(--serif)}
+@media(max-width:760px){.student-preview{grid-template-columns:1fr}.student-grid{grid-template-columns:repeat(2,1fr)}.alumni-line{grid-template-columns:1fr}}
+@media(max-width:480px){.student-grid{grid-template-columns:1fr}}
