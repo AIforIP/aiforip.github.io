@@ -342,14 +342,14 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .student-preview p{margin:0;color:var(--muted);font:12px/1.6 var(--serif)}
 .student-preview a{font-size:10px;font-weight:700}
 .students-section{margin-top:85px}
-.student-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.student-grid article{min-height:150px;padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
-.student-grid b{color:#8ca0bd;font:500 22px var(--serif)}
-.student-grid h3{margin:30px 0 7px;font:500 20px var(--serif)}
+.student-grid{display:grid;grid-template-columns:repeat(2,1fr);column-gap:55px;border-top:1px solid var(--ink)}
+.student-grid article{min-height:92px;padding:22px 0;display:grid;grid-template-columns:50px 1fr;align-content:center;border-bottom:1px solid var(--line)}
+.student-grid b{grid-row:1/3;align-self:center;color:#8ca0bd;font:500 16px var(--serif)}
+.student-grid h3{margin:0 0 7px;font:500 20px var(--serif)}
 .student-grid p{margin:0;color:var(--muted);font-size:10px}
 .alumni-line{display:grid;grid-template-columns:100px 1fr;gap:25px;margin-top:28px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .alumni-line p{margin:0;color:var(--muted);font:12px/1.7 var(--serif)}
-@media(max-width:760px){.student-preview{grid-template-columns:1fr}.student-grid{grid-template-columns:repeat(2,1fr)}.alumni-line{grid-template-columns:1fr}}
+@media(max-width:760px){.student-preview{grid-template-columns:1fr}.alumni-line{grid-template-columns:1fr}}
 @media(max-width:480px){.student-grid{grid-template-columns:1fr}}
 .research-figure{margin:42px 0 55px}
 .research-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#fff}
