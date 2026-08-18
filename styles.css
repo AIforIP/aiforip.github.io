@@ -366,3 +366,60 @@ footer{padding:75px 0 28px;color:#fff;background:#030d1c;border-top:1px solid rg
 .figure-task{width:min(880px,calc(100vw - 80px));margin-top:36px;margin-bottom:50px}
 @media(max-width:800px){.research-figure>a{padding:8px}.figure-ipbench,.figure-patre,.figure-autopatent,.figure-flowpie,.figure-task{width:calc(100vw - 32px)}.research-figure figcaption{padding:0 4px}}
 @media(max-width:620px){.research-figure{margin-top:32px;margin-bottom:44px}.research-figure figcaption{font-size:10px}.research-figure figcaption span{display:none}}
+
+/* Editorial rhythm: use rules and typography instead of repeated cards */
+.research-pillars{gap:34px;background:transparent;border:0}
+.research-pillars article{position:relative;padding:28px 8px 12px 0;border-top:2px solid var(--ink);background:transparent}
+.research-pillars article:nth-child(2){border-top-color:var(--violet)}
+.research-pillars article:nth-child(3){border-top-color:var(--green)}
+.research-pillars h3{margin-top:58px}
+.person{padding:0 0 24px;border:0}
+.person:hover{box-shadow:none;transform:translateY(-4px)}
+.person .portrait{transition:filter .25s,transform .25s}
+.person:hover .portrait{filter:contrast(1.03);transform:scale(.985)}
+.person-lead{border:0;box-shadow:none}
+.person-lead:before{content:"RESEARCH LEAD";display:block;margin-bottom:10px;color:#9a613c;font-size:7px;font-weight:750;letter-spacing:.14em}
+.people-grid{gap:26px}
+.faculty{display:grid;grid-template-columns:145px 1fr;align-items:center;gap:24px;padding:22px 0;border:0;border-top:1px solid var(--line);background:transparent}
+.faculty:last-child{border-bottom:1px solid var(--line)}
+.faculty .portrait{height:145px;margin:0}
+.faculty>div:last-child{padding:0}
+.faculty p{min-height:auto}
+.resources .resource-grid{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:0;border-top:1px solid rgba(255,255,255,.28)}
+.resources .resource-card{min-height:210px;padding:28px 28px 25px 0;border:0;border-bottom:1px solid rgba(255,255,255,.16);background:transparent}
+.resources .resource-card:hover{border-color:rgba(255,255,255,.16);transform:translateY(-3px)}
+.resources .resource-card:not(.featured){padding-left:28px;border-left:1px solid rgba(255,255,255,.16)}
+.resources .resource-card.featured{grid-column:auto;grid-row:span 2;min-height:420px;padding-right:45px;background:radial-gradient(circle at 30% 42%,rgba(99,140,255,.13),transparent 32%)}
+.resources .resource-card.featured b{width:72px;height:72px;background:transparent;border:1px solid rgba(255,255,255,.28)}
+.resources .resource-card h3{font-size:25px}
+.resources .resource-card.featured h3{font-size:38px}
+.catalog{display:block;background:transparent;border:0;border-top:2px solid var(--ink)}
+.catalog>article{min-height:0;padding:34px 0;display:grid;grid-template-columns:145px minmax(230px,.7fr) 1fr 180px;align-items:center;gap:30px;border-bottom:1px solid var(--line);background:transparent}
+.catalog>article>span{align-self:start;padding-top:10px}
+.catalog h2{margin:0;font-size:31px}
+.catalog p{margin:0}
+.catalog dl{margin:0;gap:25px}
+.catalog nav{justify-self:end;margin:0}
+.arena-banner{border-radius:0}
+.research-figure>a{padding:0;border:0;box-shadow:none;background:transparent}
+.research-figure>a:hover{border-color:transparent;box-shadow:none}
+@media(max-width:1000px){.catalog>article{grid-template-columns:110px 1fr 1fr}.catalog nav{grid-column:2/4;justify-self:start}.catalog dl{display:none}}
+@media(max-width:900px){.resources .resource-grid{grid-template-columns:1fr 1fr}.resources .resource-card.featured{grid-column:1/-1;grid-row:auto;min-height:360px}.resources .resource-card:not(.featured){border-left:0}.resources .resource-card:nth-child(even){padding-left:25px;border-left:1px solid rgba(255,255,255,.16)}}
+@media(max-width:700px){.faculty{grid-template-columns:110px 1fr}.faculty .portrait{height:120px}.catalog>article{grid-template-columns:1fr;gap:14px}.catalog>article>span{padding-top:0}.catalog nav{grid-column:1}.resources .resource-grid{grid-template-columns:1fr}.resources .resource-card,.resources .resource-card:not(.featured),.resources .resource-card:nth-child(even){padding:25px 0;border-left:0}.resources .resource-card.featured{min-height:330px}}
+
+/* People page: a calm academic directory, not a card grid */
+.people-page .faculty-grid{display:block;border-top:2px solid var(--ink)}
+.people-page .faculty{grid-template-columns:150px 1fr;gap:32px;min-height:190px;padding:20px 0;border-top:0;border-bottom:1px solid var(--line)}
+.people-page .faculty .portrait{grid-row:1;height:150px;width:130px}
+.people-page .faculty>div:last-child{display:grid;grid-template-columns:110px 185px 1fr 70px;align-items:center;gap:25px}
+.people-page .faculty span{align-self:center}
+.people-page .faculty h3{align-self:center;margin:0;font-size:31px}
+.people-page .faculty p{align-self:center;margin:0;max-width:380px;font:13px/1.7 var(--serif)}
+.people-page .faculty i{align-self:center;justify-self:end}
+.people-page .lead-profile{grid-template-columns:190px 1fr;gap:45px;padding:28px 0;border:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);background:transparent}
+.people-page .lead-profile .portrait{width:170px;height:210px}
+.people-page .lead-profile h2{font-size:36px}
+.people-page .lead-profile p{font-size:14px}
+@media(max-width:800px){.people-page .faculty{grid-template-columns:110px 1fr;gap:22px}.people-page .faculty .portrait{grid-row:1/5;width:100px;height:125px}.people-page .faculty>div:last-child{display:block}.people-page .faculty h3{margin:8px 0}.people-page .faculty i{display:inline-block;margin-top:12px}.people-page .lead-profile{grid-template-columns:150px 1fr}.people-page .lead-profile .portrait{width:140px;height:175px}}
+@media(max-width:560px){.people-page .faculty{grid-template-columns:85px 1fr}.people-page .faculty .portrait{width:75px;height:105px}.people-page .lead-profile{grid-template-columns:1fr}.people-page .lead-profile .portrait{width:145px;height:180px}}
+@media(max-width:800px){.people-page .faculty .portrait{grid-row:auto}.people-page .faculty>div:last-child{display:block}}
